@@ -4,12 +4,15 @@ body {
   font-family: "museo-sans", sans-serif;
 }
 
-img {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color: white;
 }
 
 /* Fonts */
@@ -131,13 +134,16 @@ a.nav-link:hover {
 
 /* Bottles Section */
 
+.title hr {
+  margin: 2rem 0;
+}
 
 .title h1 {
   font-family: 'Fredericka the Great', sans-serif;
   color: white;
   font-size: 4rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-decoration: underline;
 }
 
@@ -146,19 +152,40 @@ a.nav-link:hover {
   transition-duration: 800ms;
 }
 
+.title p {
+  color: white;
+  padding: 1rem;
+  font-size: .75rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2;
+  margin: 0rem 5rem;
+}
+
+
+/* Gallery */
+
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
-  margin-top: 4rem;
+  justify-content: space-around;
+  margin-top: 0rem;
+  margin: 0rem 3rem;
 }
 
 .gallery img {
   flex-grow: 1;
-  flex-basis: 6.5rem;
+  flex-basis: 4.5rem;
   max-width: 12rem;
-  margin: 2rem;
+  margin: 1rem 0rem;
+  transition: 300ms ease-out 200ms;
+}
+
+.gallery img:hover {
+  transform: scale(1.5);
 }
 
 .item {
@@ -167,29 +194,3 @@ a.nav-link:hover {
 }
 
 /* Media Breakpoints */
-
-@media (max-width: 575.98px) {
-    .gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media (max-width: 768.98px) and (min-width: 576px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 991.98px) and (min-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media (max-width: 1199.98px) and (min-width: 992px) {
-    .gallery {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-@media (min-width: 1200px) {
-    .gallery {
-        grid-template-columns: repeat(5, 1fr);
-    }
-}
