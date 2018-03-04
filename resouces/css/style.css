@@ -15,6 +15,14 @@ hr {
     color: white;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
 /* Fonts */
 
   /* latin */
@@ -125,14 +133,9 @@ a.nav-link:hover {
   text-shadow: #EAD729 1px 0 10px;
 }
 
-.main_banner h1 {
-}
-
-.main_banner h2 {
-}
-
 
 /* Bottles Section */
+
 
 .title hr {
   margin: 2rem 0;
@@ -192,5 +195,109 @@ a.nav-link:hover {
     height: 100%;
     width: 100%;
 }
+
+/* About Section */
+
+.wrapper-1 {
+  display: flex;
+  margin-right: 6rem;
+  margin-left: 10rem;
+  background-image: url("../images/Wooden_background.jpg");
+  border-radius: 1rem;
+  border: .1rem solid white;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.about hr {
+  margin: 2rem 0;
+}
+
+.about h4 {
+  display: block;
+  color: white;
+  padding: 1rem;
+  font-size: .75rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.about h1 {
+  font-family: 'Fredericka the Great', sans-serif;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+.about h1:hover {
+  color: #EAD729;
+  transition-duration: 800ms;
+}
+
+.about img {
+  display: block;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.about p {
+  display: block;
+  color: white;
+  padding: 1rem;
+  font-size: .75rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+/* Contact Section */
+
+
+.flex-container.locations {
+  padding-top: 5px;
+}
+
+.store {
+  display: flex;
+  margin: 5px 1.3rem;
+  padding: 1rem;
+  background-color: black;
+  flex-direction: column;
+  flex-basis: 280px;
+  justify-content: center;
+  flex-direction: center;
+  color: white;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.store h3 {
+  padding: .2rem;
+  color: white;
+  font-size: .90rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.icons {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  font-size: 3rem;
+}
+
+
+/* Footer Section */
+
+footer {
+  height: 10rem;
+}
+
 
 /* Media Breakpoints */
