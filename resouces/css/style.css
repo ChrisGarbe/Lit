@@ -45,7 +45,7 @@ hr {
 /* header */
 
 
-header {
+header .desktop-nav{
   display: flex;
   background-color: black;
   height: 5rem;
@@ -56,7 +56,7 @@ header {
   z-index: 5;
 }
 
-header h1 {
+.desktop-nav h1 {
   display: block;
   margin-left: 2rem;
   font-family: 'Fredericka the Great', sans-serif;
@@ -64,19 +64,19 @@ header h1 {
   font-size: 3rem;
 }
 
-header h1:hover {
+.desktop-nav h1:hover {
   color: #EAD729;
   transition-duration: 800ms;
 }
 
-nav {
+.desktop-nav nav {
   display: flex;
   align-items: center;
   margin-right: 2rem;
   justify-content: flex-end;
 }
 
-header span {
+.desktop-nav span {
   color: white;
   padding: 1rem;
   font-size: .75rem;
@@ -94,11 +94,32 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-  /* color: #BE3F3F; */
   color: #EAD729;
   transition-duration: 800ms;
   border-bottom: 1px solid white;
 }
+
+/* Moblie Header Section */
+
+/*
+@media only screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  /* .moblie-nav {
+    display: flex;
+  } */
+
+
+/* .moblie-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+} */
+
+
+
 
 
 /* Banner */
@@ -299,5 +320,17 @@ footer {
   height: 10rem;
 }
 
+footer h1 {
+  display: block;
+  margin-right: 1rem;
+  text-align: right;
+  margin-top: 3rem;
+  color: white;
+  font-size: .50rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  line-height: 2;
+
+}
 
 /* Media Breakpoints */
