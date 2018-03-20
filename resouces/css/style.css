@@ -1,3 +1,5 @@
+
+
 body {
   background-color: rgb(29,29,29);
   font-size: 16;
@@ -21,6 +23,7 @@ hr {
   flex-wrap: wrap;
 }
 
+/* Coming Soon Page */
 
 
 /* Fonts */
@@ -132,6 +135,7 @@ a.nav-link:hover {
   background-repeat: no-repeat;
   background-position: center;
   height: 65rem;
+  margin-top: 2rem;
 }
 
 .main_banner .info {
@@ -223,7 +227,8 @@ a.nav-link:hover {
   display: flex;
   margin-right: 6rem;
   margin-left: 10rem;
-  background-image: url("../images/Wooden_background.jpg");
+  /* background-image: url("../images/Wooden_background.jpg"); */
+  background-color: #663300;
   border-radius: 1rem;
   border: .1rem solid white;
   align-items: center;
@@ -280,30 +285,116 @@ a.nav-link:hover {
 
 
 .flex-container.locations {
-  padding-top: 5px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .store {
   display: flex;
-  margin: 5px 1.3rem;
-  padding: 1rem;
-  background-color: black;
+  background-color: #101010	;
   flex-direction: column;
-  flex-basis: 280px;
-  justify-content: center;
+  /* flex-basis: 280px; */
+  /* justify-content: center; */
   flex-direction: center;
   color: white;
   border-radius: 1rem;
   text-align: center;
+  height: 15rem;
+  width: 20rem;
 }
 
-.store h3 {
+.store .phone-number a {
+  display: block;
   padding: .2rem;
   color: white;
   font-size: .90rem;
   letter-spacing: .2rem;
-  text-transform: uppercase;
   line-height: 2;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  text-decoration: none;
+}
+
+.store .phone-number a:hover {
+  text-decoration: underline;
+}
+
+.store .first-box a {
+  margin-top: 1.5rem;
+  padding: .5rem;
+  color: black;
+  font-size: .90rem;
+  letter-spacing: .2rem;
+  line-height: 2;
+  background-color: white;
+  border-radius: .2rem;
+  text-decoration: none;
+}
+
+.store .first-box a:hover {
+  text-decoration: underline;
+}
+
+.store .sold-here h3 {
+  display: block;
+  padding: .2rem;
+  color: white;
+  font-size: .90rem;
+  letter-spacing: .2rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+  margin-top: .75rem;
+}
+
+.store .sold-here p {
+  display: block;
+  padding: .2rem;
+  color: white;
+  font-size: .90rem;
+  letter-spacing: .2rem;
+  line-height: .2;
+  /* margin-bottom: 1.5rem; */
+  margin-top: 1.5rem;
+}
+
+.store .google a {
+  margin-top: 1.5rem;
+  padding: .5rem;
+  color: black;
+  font-size: .90rem;
+  letter-spacing: .2rem;
+  line-height: 5;
+  background-color: white;
+  border-radius: .2rem;
+  text-decoration: none;
+}
+
+.store .google a:hover {
+  text-decoration: underline;
+}
+
+.store i {
+  margin-top: 1rem;
+}
+
+.store .icons {
+  display: flex;
+  margin-top: 4rem;
+}
+
+/* .store .icons i {
+  justify-content: center;
+} */
+
+.fab:hover {
+  transition: .2s;
+  font-size: 4rem;
 }
 
 .icons {
@@ -317,14 +408,14 @@ a.nav-link:hover {
 /* Footer Section */
 
 footer {
-  height: 10rem;
+  height: 6rem;
 }
 
 footer h1 {
   display: block;
   margin-right: 1rem;
   text-align: right;
-  margin-top: 3rem;
+  margin-top: 6rem;
   color: white;
   font-size: .50rem;
   letter-spacing: .2rem;
@@ -334,3 +425,55 @@ footer h1 {
 }
 
 /* Media Breakpoints */
+
+/* Coming Soon Section */
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: rgb(29,29,29);
+  font-size: 16;
+  font-family: "museo-sans", sans-serif;
+}
+
+.coming-soon h6 {
+  display: flex;
+  margin-left: 2rem;
+  font-family: 'Fredericka the Great', sans-serif;
+  color: white;
+  font-size: 3rem;
+}
+
+.coming-soon p {
+  display: flex;
+  color: white;
+  padding: 3rem;
+  font-size: .75rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2;
+  margin: 0rem 5rem;
+}
+
+.return-home {
+  display: flex;
+  border: 1px solid white;
+  padding: 2rem;
+  color: white;
+  font-size: .75rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2;
+  margin: 0rem 5rem;
+  text-decoration: none;
+}
+
+.return-home:hover {
+  background-color: black;
+  transition: 200ms;
+}
